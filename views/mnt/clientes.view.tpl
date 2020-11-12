@@ -30,6 +30,9 @@
                 Correo
                 </th>
                 <th>
+                Comunicaciones
+                </th>
+                <th>
                 <a class="btn depth-1 s-margin" href="index.php?page=cliente&mode=INS&clientid=0"><span class="ion-plus-circled"></span></a><br/>
                 </th>
             </tr>
@@ -48,6 +51,9 @@
                 </td>
                 <td>
                 {{clientmail}}
+                </td>
+                <td>
+                <a class="btn depth-1 s-margin" href="index.php?page=Comunicaciones&clientid={{clientid}}">@</a>
                 </td>
                 <td class="center">
                 <a class="btn depth-1 s-margin" href="index.php?page=cliente&mode=UPD&clientid={{clientid}}"><span class="ion-edit"></span></a>
