@@ -1,3 +1,3 @@
 CREATE SCHEMA `nw202003` ;
-CREATE USER 'momoportillo'@'%' IDENTIFIED BY 'moyportir2d2';
+CREATE USER ''@'%' IDENTIFIED BY '';
 GRANT ALL ON nw202003.* TO 'momoportillo'@'%';
