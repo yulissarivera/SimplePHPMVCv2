@@ -36,7 +36,7 @@ function getComunicacionesPorCliente($filtro) {
 }
 
 function addNewComunicacion($clientid, $cmnnotas, $cmntags, $cmntipo){
-    $insSql = "INSERT INTO `comunicaciones` (`clientid`,`cmnnotas`,`cmntags`,`cmnfching`,`cmnusring`,`cmntipo`) VALUES ( '%d', '%s', '%s', now(), 0, '%s');";
+    $insSql = "INSERT INTO `comunicaciones` ( `clientid`, `cmnnotas`, `cmntags`, `cmnfching`, `cmnusring`, `cmntipo`) VALUES ( '%s', '%s', '%s', now(), '1', '%s');";
     return ejecutarNonQuery(
         sprintf(
             $insSql,
@@ -47,6 +47,5 @@ function addNewComunicacion($clientid, $cmnnotas, $cmntags, $cmntipo){
         )
     );
 }
-
 
 ?>

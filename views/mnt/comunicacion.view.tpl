@@ -3,6 +3,7 @@
     <form method="POST" action="index.php?page=comunicacion&mode={{mode}}&clientid={{clientid}}&cmnid={{cmnid}}">
         <input type="hidden" name="mode" value="{{mode}}"/>
         <input type="hidden" name="cmnid" value="{{cmnid}}"/>
+        <input type="hidden" name="clientid" value="{{clientid}}"/>
         <input type="hidden" name="xsstoken" value="{{xsstoken}}"/>
         <div>
         <label for="cmnnotas">Notas de comunicacion: </label>

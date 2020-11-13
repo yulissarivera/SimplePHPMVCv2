@@ -60,7 +60,7 @@ function run() {
                 $viewData["cmntipo"]
             );
             if ($result > 0) {
-                redirectWithMessage("Guardado Exitosamente", "index.php?page=comunicaciones&mode=CMN&clientid={{clientid}}");
+                redirectWithMessage("Guardado Exitosamente", "index.php?page=clientes");
             }
             break;
         }

@@ -33,8 +33,7 @@ function run(){
     if ($viewData["cln_txtfilter"] === "") {
         $viewData["comunicaciones"] = getComunicacionesPorCliente($viewData["clientid"]);
     } else {
-        die("Hola");
-        //$viewData["comunicaciones"] = getComunicacionesPorFiltro($viewData["cln_txtfilter"]);
+        die("Aqui va parte del filtro");
     }
     
     if($viewData["mode"] === "CMN"){
