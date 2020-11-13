@@ -4,8 +4,8 @@
 <section class="row">
     <h2>Filtrar por</h2>
     <div class="col-sm-12 col-md-10">
-        <label class="col-sm-12 col-md-3" for="cln_txtfilter">Codigo | Usuario</label>
-        <input class="col-sm-12 col-md-9" type="text" name="cln_txtfilter" id="cln_txtfilter" value="{{cln_txtfilter}}" placeholder="Codigo | Usuario"/>
+        <label class="col-sm-12 col-md-3" for="cln_txtfilter">Codigo</label>
+        <input class="col-sm-12 col-md-9" type="text" name="cln_txtfilter" id="cln_txtfilter" value="{{cln_txtfilter}}" placeholder="Codigo"/>
     </div>
     <div class="col-sm-12 col-md-2">
         <button type="submit" name="btnFiltrar">Actualizar</button>

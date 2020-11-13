@@ -35,6 +35,12 @@ function getComunicacionesPorCodigo($filtro) {
     return obtenerRegistros(sprintf($sqlstr, $ffiltro));
 }
 
+function getComunicacionesPorCliente($filtro) {
+    $ffiltro = $filtro.'%';
+    $sqlstr = "SELECT * from comunicaciones where clientid like '%d';";
+    return obtenerRegistros(sprintf($sqlstr, $ffiltro));
+}
+
 function addNewComunicacion($clientid, $cmnnotas, $cmntags, $cmntipo){
     $insSql = "INSERT INTO `comunicaciones` ( `clientid`, `cmnnotas`, `cmntags`, `cmnfching`, `cmnusring`, `cmntipo`) VALUES ( '%s', '%s', '%s', now(), '1', '%s');";
     return ejecutarNonQuery(
