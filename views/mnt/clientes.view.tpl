@@ -53,7 +53,7 @@
                 {{clientmail}}
                 </td>
                 <td class="center">
-                <a class="btn depth-1 s-margin" href="index.php?page=comunicaciones&clientid={{clientid}}">@</a>
+                <a class="btn depth-1 s-margin" href="index.php?page=comunicaciones&mode=CMN&clientid={{clientid}}">@</a>
                 </td>
                 <td class="center">
                 <a class="btn depth-1 s-margin" href="index.php?page=cliente&mode=UPD&clientid={{clientid}}"><span class="ion-edit"></span></a>

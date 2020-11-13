@@ -1,6 +1,6 @@
-<section><h1>Comunicaciones Cliente: {{clientname}}</h1></section>
+<section><h1>{{modedsc}}</h1></section>
 <hr/>
-<form action="index.php?page=comunicaciones" method="post">
+<form action="index.php?page=comunicaciones&mode={{mode}}&clientid={{clientid}}" method="POST">
 <section class="row">
     <h2>Filtrar por</h2>
     <div class="col-sm-12 col-md-10">
@@ -30,7 +30,7 @@
                 Tipo
                 </th>
                 <th>
-                <a class="btn depth-1 s-margin" href="index.php?page=cliente&mode=INS&clientid=0"><span class="ion-plus-circled"></span></a><br/>
+                <a class="btn depth-1 s-margin" href="index.php?page=comunicacion&mode=INS&clientid={{clientid}}&cmnid=0"><span class="ion-plus-circled"></span></a><br/>
                 </th>
             </tr>
         </thead>
@@ -41,7 +41,7 @@
                 {{cmnid}}
                 </td>
                 <td>
-                {{fching}}
+                {{cmnfching}}
                 </td>
                 <td>
                 {{cmnusring}} 
@@ -50,7 +50,7 @@
                 {{cmntipo}}
                 </td>
                 <td class="center">
-                <a class="btn depth-1 s-margin" href="index.php?page=cliente&mode=DSP&clientid={{clientid}}"><span class="ion-eye"></span></a>                
+                <a class="btn depth-1 s-margin" href="index.php?page=comunicacion&mode=DSP&clientid={{clientid}}&cmnid={{cmnid}}"><span class="ion-eye"></span></a>                
                 </td>
             </tr>
             {{endfor comunicaciones}}
