@@ -29,9 +29,9 @@ function getComunicacionesById($cmnid) {
     return obtenerUnRegistro(sprintf($sqlstr, $cmnid));
 }
 
-function getComunicacionesPorCliente($filtro) {
+function getComunicacionesPorCodigo($filtro) {
     $ffiltro = $filtro.'%';
-    $sqlstr = "SELECT * from comunicaciones where clientid like '%d';";
+    $sqlstr = "SELECT * from comunicaciones where cmnid like '%d';";
     return obtenerRegistros(sprintf($sqlstr, $ffiltro));
 }
 
