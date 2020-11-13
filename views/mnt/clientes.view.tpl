@@ -52,7 +52,7 @@
                 <td>
                 {{clientmail}}
                 </td>
-                <td>
+                <td class="center">
                 <a class="btn depth-1 s-margin" href="index.php?page=Comunicaciones&clientid={{clientid}}">@</a>
                 </td>
                 <td class="center">
