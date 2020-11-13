@@ -16,11 +16,8 @@ function run(){
         $viewData["comunicaciones"] = getAllComunicaciones();
     } else {
         $viewData["comunicaciones"] = getComunicacionesPorFiltro($viewData["cln_txtfilter"]);
-    }
-
-    $viewData["addbtnClnt"] = isAuthorized("addbtnClnt", getUserCode());
+    }    
     
-
     renderizar("mnt/comunicaciones", $viewData);
 }
 
